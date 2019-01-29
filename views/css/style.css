@@ -1,0 +1,345 @@
+body{
+    background-color: rgb(1, 58, 1) !important;
+    color: white !important;
+    /* margin: auto; */
+    /* overflow: hidden; */
+}
+
+.title{
+    margin: auto !important;
+    width: 600px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.greenbox{
+    background-color: rgb(18, 187, 18);
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+
+}
+
+.default1{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 85px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+
+    
+}
+
+.default2{
+    background-color: red;
+    display: inline-block;
+    width: 85px;
+    height: 100px;
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+    
+}
+
+input[type="checkbox"] {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#checkboxes{
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#checkboxes input[type=checkbox]{
+    display: none;
+}
+
+
+#checkboxes input[type=checkbox]:checked + .greenbox{
+    box-shadow: 5px 10px gray;
+    background-color: rgba(95, 189, 105, 0.776)
+}
+
+#checkboxes input[type=checkbox]:checked + .default1{
+    box-shadow: 5px 10px gray;
+    background-color: rgba(146, 140, 140, 0.699)
+}
+
+#checkboxes input[type=checkbox]:checked + .default2{
+    box-shadow: 5px 10px gray;
+    background-color: rgba(228, 84, 84, 0.671)
+}
+
+.dubRed{
+    position: relative;
+}
+
+.doubleRed{
+    display:inline-block;
+    width:15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color:lightblue;
+    border: 2px solid lightblue;
+    cursor:pointer;
+    margin: 2px 0; 
+    background-color: rgb(1, 58, 1) !important;
+    border: none;
+    position: relative;
+}
+.r2{
+    position: absolute;
+}
+
+
+.dubBlack{
+    position: relative;
+}
+
+.doubleBlack{
+    display:inline-block;
+    width:15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color:lightblue;
+    border: 2px solid lightblue;
+    cursor:pointer;
+    margin: 2px 0; 
+    background-color: rgb(1, 58, 1) !important;
+    border: none;
+    position: relative;
+}
+
+.align-radio{
+    align-items: flex-start;
+    display: flex;
+    padding-top: 5%;
+}
+.b2{
+    position: absolute;
+    align-items: flex-start;
+}
+/* .doubleRed.selected{
+    border-color: green;
+} */
+
+
+.allRed {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid red;
+    position: relative;
+    top: -50px;
+  }
+  .allRed:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid red;
+  }
+
+  .allBlack {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid black;
+    position: relative;
+    top: -50px;
+  }
+  .allBlack:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid black;
+  }
+
+  .releaseContainer {
+      display: flex;
+      width: 450px;
+      justify-content: space-around;
+      margin: auto;
+      height: 100px;
+      align-items: center;
+  }
+
+  
+
+/* label {
+    margin: 10px;
+} */
+
+
+
+    #dubBlack {
+        background: black;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        text-align: center;
+      }
+      #dubBlack:before,
+      #dubBlack:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 80px;
+        background: black;
+      }
+      #dubBlack:before {
+        transform: rotate(30deg);
+      }
+      #dubBlack:after {
+        transform: rotate(60deg);
+      }
+
+      .doubleBlack{
+        background-color: rgb(1, 58, 1) !important;
+        border: none;
+      }
+
+      #dubRed {
+        background: red;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        text-align: center;
+      }
+      #dubRed:before,
+      #dubRed:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 80px;
+        background: red;
+      }
+      #dubRed:before {
+        transform: rotate(30deg);
+      }
+      #dubRed:after {
+        transform: rotate(60deg);
+      }
+
+    
+
+
+  .redButton{
+        border: none;
+        background-color: rgb(1, 58, 1)
+
+  }
+
+  .blackButton{
+      border: none;
+      background-color: rgb(1, 58, 1)
+
+  }
+
+  #rectangle {
+    width: 200px;
+    height: 100px;
+    background: yellow;
+    border: 10px solid green;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 50px;
+  }
+
+  #betSubmit{
+    background-color: yellow;
+    border-radius: 25px;
+    border: 5px solid green;
+
+  }
+
+  .all{
+      border: none;
+      background-color: rgb(1, 58, 1)
+
+  }
+
+  .board{
+      padding: 10px;
+  }
+
+  .controlContainer{
+      width: 1150px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .doubleContainer{
+      width:43%;
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  .diamondContainer {
+    display: flex;
+    width: 58%;
+    justify-content: space-between;
+    /* margin: auto;
+    height: 100px;
+    align-items: center; */
+}
+
+.labelContainer {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    margin: auto;
+    height: 95px;
+    align-items: center;
+    font: 18px, bolder !important;
+}
+
+.releaseContainer {
+    display: flex;
+    width: 750px;
+    justify-content: space-around;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+}
+
+
+  
