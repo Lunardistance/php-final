@@ -107,14 +107,14 @@
     <div class="doubleRed" id="doubleRed">
 </div> 
 </div>
-<input type="radio" class= "r2" value ="r2" name ="selection[]">
+<input type="radio" class= "r2" id="r2" value ="r2" name ="selection[]">
 </div>
 <div class="align-radio">
 <div class="dubBlack" id="dubBlack">
     <div class = "doubleBlack" id="doubleBlack">
 </div>
 </div>
-<input type="radio" class= "b2" value ="b2" name ="selection[]">
+<input type="radio" class= "b2" id ="b2" value ="b2" name ="selection[]">
 </div>
 
 </form>
