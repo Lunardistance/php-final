@@ -13,10 +13,11 @@ function authenticate(){
             window.location.href='login.php';
             </script>";
         }else{
-            $player = new Player($_POST['username'], $_POST['lpw'], 100);
+            $player = new Player($_POST['username'], $_POST['lpw'], $chips);
             $validate = $conn->query("SELECT * FROM players WHERE username = '$player->username'");
             if($validate){
                 $user = $validate->fetch_object();
+                var_dump($user);
                     if(empty($user)){
                         echo "<script>
                         alert('Wrong User/Password Combination');

@@ -134,6 +134,7 @@
 
 <div class="releaseContainer">
 <button type = "button" class="all" id ="all"><div id="rectangle">Release Bets</div></button>
+<!-- <input type="submit" id="betsubmit"> -->
 </div>
 </div>
 
